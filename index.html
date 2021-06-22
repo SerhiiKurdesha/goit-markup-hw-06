@@ -396,6 +396,54 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <form action="#" class="modal-window">
+                <p class="modal-text">Оставте свои данные, мы вам перезвоним</p>
+                
+                <label class="modal-border">Имя</label>
+        
+                    <span class="modal-side">
+                        <input type="text" name="user-name" class="modal-border-title" required/>
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/new-post/sprite2.svg#icon-name"></use>
+                        </svg>
+                    </span>
+                
+                <label class="modal-border">Телефон</label>
+                    
+                    <span class="modal-side">
+                    <input type="tel" name="user-phone" class="modal-border-title" required />
+                    <svg class="modal-icon" width="18" height="18">
+                        <use href="./images/new-post/sprite2.svg#icon-tel"></use>
+                    </svg>
+                    </span>
+                
+                <label class="modal-border">Почта</label>
+                    
+                    <span class="modal-side">
+                    <input type="text" name="user-mail" class="modal-border-title" required />
+                    <svg class="modal-icon" width="18" height="18">
+                        <use href="./images/new-post/sprite2.svg#icon-mail"></use>
+                    </svg>
+                    </span>
+                
+                <label class="modal-border">Комментарии</label>
+                    
+                    <textarea name="user-comments" class="modal-textarea" placeholder="Введите текст"></textarea>
+                
+                <!-- <input type="checkbox" name="user-agree" id="checkbox" required class="checkbox">
+                <svg class="checkbox-bord" width="16" height="15">
+                    <use href="./images/new-post/sprite2.svg#icon-bord"></use>
+                </svg>       -->
+                <label for="checkbox" class="checkbox-accept">
+                     <input type="checkbox" name="user-agree" id="checkbox" required class="checkbox">
+                        <svg class="checkbox-bord">
+                             <use href="./images/new-post/sprite2.svg#icon-bord-white"></use>
+                        </svg>
+                Соглашаюсь с рассылкой и принимаю<a href="">Условия договора</a>
+                </label> 
+                <button class="modal-btn" type="submit">Отправить</button>
+                
+            </form>
             <button class="close" data-modal-close>
                 <svg width="11" height="11" class="btn-close">
                     <use href="./images/close/sprite1.svg#icon-close"></use>
