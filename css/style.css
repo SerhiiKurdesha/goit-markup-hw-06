@@ -645,10 +645,13 @@ img {
   padding: 10px 62px 10px 29px;
   background: var(--accent-color);
   color: var(--header-color);
+  fill: #ffffff;
   border-radius: 4px;
   margin-left: 12px;
+  font-style: normal;
+  font-weight: bold;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.87;
   letter-spacing: 0.06em;
   border-color: transparent;
   cursor: pointer;
@@ -657,12 +660,15 @@ img {
    position: absolute;
    right: 28px;
    padding-left: 0;
+   
 }
 .join-button:hover,
 .join-button:focus{
     background: var(--pink-color);
     color: var(--title-text-color);
+    fill: var(--title-text-color);
 }
+
 /* FOOTER_SECTION */
 
 /* OVERLAY */
