@@ -11,6 +11,7 @@
 --pink-color: #F5F4FA;
 --four-icons-color: #afb1b8;
 --transition: cubic-bezier(0.4, 0, 0.2, 1);
+--hover-focus-btn: #188CE8;
 }
 * {
     margin: 0; 
@@ -27,7 +28,7 @@ ul {
  padding: 0;   
 } 
 a {
-    text-decoration: none;
+    text-decoration: none; 
 }  
 address {
     font-style: normal;
@@ -766,7 +767,8 @@ img {
     background: var(--pink-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    cursor: pointer;    
+    cursor: pointer;
+    transition: fill 250ms var(--transition);    
 }
 .close:hover,
 .close:focus{
@@ -782,16 +784,23 @@ img {
 .modal-border{
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
     margin-bottom: 4px;
-    /* position: relative;  */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color);
 } 
 .modal-border-title{
-    width: 448px;
+    width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 42px;
+    margin-bottom: 10px;
+    transition: border 250ms var(--transition); 
+    cursor: pointer;
 }
 .modal-border-title:focus,
 .modal-border-title:hover{
@@ -809,6 +818,7 @@ img {
     transform: translateY(-50%);
     top: 50%;
     margin-left: 15px;
+    transition: fill 250ms var(--transition)
 }
 .modal-side{
     position: relative;
@@ -820,10 +830,10 @@ img {
     height: 120px;
     resize: none;
     padding: 12px 16px;
-    margin-top: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
+    transition: border 250ms var(--transition);
 }
 .modal-textarea:hover{
     border-color: var(--accent-color);
@@ -844,7 +854,14 @@ img {
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    cursor: pointer;
 }
 .checkbox-bord{
     /* content: ''; */
@@ -862,9 +879,14 @@ img {
     background-origin: border-box;
     background-size: contain;
 }
+.contract{
+    text-decoration: underline;
+    color: var(--accent-color);
+} 
 .modal-btn{
-    display: flex;
-    padding: 10px 55px;
+    display: block;
+    width: 200px;
+    height: 50px;
     margin: auto;
     color: var(--header-color);
     font-style: normal;
@@ -876,4 +898,12 @@ img {
     border: transparent;
     background: var(--accent-color);
     cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.modal-btn:hover,
+.modal-btn:focus{
+    background: var(--hover-focus-btn);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
