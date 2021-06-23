@@ -633,6 +633,7 @@ img {
     color: var(--header-color);
     background: var(--footer-color-line);
     border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .join-input:hover,
 .join-input:focus{
@@ -655,11 +656,12 @@ img {
   letter-spacing: 0.06em;
   border-color: transparent;
   cursor: pointer;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .join-icon{
    position: absolute;
    right: 28px;
-   padding-left: 0;
+   padding-left: 0; 
    
 }
 .join-button:hover,
@@ -667,6 +669,7 @@ img {
     background: var(--pink-color);
     color: var(--title-text-color);
     fill: var(--title-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* FOOTER_SECTION */
