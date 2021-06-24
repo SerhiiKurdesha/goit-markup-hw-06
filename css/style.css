@@ -54,6 +54,9 @@ img {
     letter-spacing: 0.03em;
     color: var(--black-color);
 }
+.logostudio{
+    color: var(--accent-color);
+}    
 .logo-down {
     font-family: var(--logo-style-font);
     font-weight: bold;
@@ -641,7 +644,7 @@ img {
   display: inline-block;
   align-items: center;
   position: relative;
-  padding: 10px 62px 10px 29px;
+  padding: 8px 62px 9px 29px;
   background: var(--accent-color);
   color: var(--header-color);
   fill: #ffffff;
@@ -658,6 +661,7 @@ img {
 }
 .join-icon{
    position: absolute;
+   bottom: 13px;
    right: 28px;
    padding-left: 0; 
    
@@ -858,8 +862,7 @@ img {
 }
 .agree:hover,
 .agree:focus{
-    
-   /* transition: fill 250ms var(--transition);  */
+    border-color: var(--accent-color);
 }
 .agree-text{
     font-style: normal;
