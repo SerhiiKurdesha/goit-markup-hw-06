@@ -760,11 +760,11 @@ img {
 }
 .close{
     position: absolute;
+    background-color: transparent;
     top: 8px;
     right: 8px;
     width: 30px;
     height: 30px;
-    background: var(--pink-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
