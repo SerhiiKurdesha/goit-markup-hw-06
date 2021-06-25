@@ -884,6 +884,9 @@ img {
     background-origin: border-box;
     transition: background 250ms var(--transition);
 }
+.checkbox:focus + .agree{
+    border-color: var(--accent-color);
+}
 .contract{
     text-decoration: underline;
     color: var(--accent-color);
